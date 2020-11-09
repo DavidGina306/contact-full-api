@@ -5,7 +5,7 @@ public class ContactPresenter {
     private String nome;
     private String email;
     private String sexo;
-    private String telone;
+    private String telefone;
 
     public Long getId() {
         return id;
@@ -39,11 +39,11 @@ public class ContactPresenter {
         this.sexo = sexo;
     }
 
-    public String getTelone() {
-        return telone;
+    public String getTelefone() {
+        return telefone;
     }
 
-    public void setTelone(String telone) {
-        this.telone = telone;
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
     }
 }

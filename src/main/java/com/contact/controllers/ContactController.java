@@ -50,14 +50,29 @@ public class ContactController {
         }
         return ResponseEntity.notFound().build();
     }
+//    @PutMapping("/{contatoId}")
+//    public ResponseEntity<Contato> update(@Valid @PathVariable Long contatoId,
+//                                          @RequestBody Contato contato) {
+//        if(!contactRepository.existsById(contatoId)) {
+//            return ResponseEntity.notFound().build();
+//        }
+//        contactUpdateService.update(contatoId, contato);
+//        return ResponseEntity.ok(contato);
+//    }
+
     @PutMapping("/{contatoId}")
-    public ResponseEntity<Contato> update(@Valid @PathVariable Long contatoId,
-                                          @RequestBody Contato contato) {
-        if(!contactRepository.existsById(contatoId)) {
+    public ResponseEntity<Object> updatecontato(@RequestBody Contato contato, @PathVariable long contatoId) {
+
+        Optional<Contato> contatoOptional = contactRepository.findById(contatoId);
+
+        if (!contatoOptional.isPresent())
             return ResponseEntity.notFound().build();
-        }
-        contactUpdateService.update(contatoId, contato);
-        return ResponseEntity.ok(contato);
+
+        contato.setId(contatoId);
+
+        contactRepository.save(contato);
+
+        return ResponseEntity.noContent().build();
     }
     
     @DeleteMapping("/{contatoId}")
