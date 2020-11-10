@@ -35,7 +35,7 @@ public class Contato implements Serializable {
     public OffsetDateTime getCreatedDate() {
         return createdDate;
     }
-
+    
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
