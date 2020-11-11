@@ -16,8 +16,8 @@ For building and running the application you need:
 
 ## Configuração do serve e da conexão do MYSQL
 ```
-No arquivo pplication.properties localizado src/main/resources/application.properties.
-server.port=9090
+<b>No arquivo pplication.properties localizado src/main/resources/application.properties.
+server.port=9090</b>
 
 spring.jpa.hibernate.ddl-auto=update
 spring.datasource.url=jdbc:mysql://localhost:3306/contacts?createDatabaseIfNotExist=true&serverTimezone=UTC
