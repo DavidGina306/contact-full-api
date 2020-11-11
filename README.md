@@ -1,9 +1,10 @@
-<h1 align="center">Bem vindo a CONTACT FULL 👋</h1>
+<h1 align="center">Bem vindo a CONTACT FULL API 👋</h1>
 <p align="center">
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <img src="https://img.shields.io/badge/JDK-%3E%3D1.8-blue.svg" />
   <img src="https://img.shields.io/badge/Maven-%3E%3D3.0-blue.svg" />
   <img src="https://img.shields.io/badge/SPRING-%3E%3D2.3.4-green.svg" />
+  <img src="https://img.shields.io/badge/MYSQL-%3E%3D5.6-red.svg" />
   <a href="https://github.com/DavidGina306/contacts#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
