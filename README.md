@@ -14,6 +14,9 @@ For building and running the application you need:
 - [Maven 3](https://maven.apache.org)
 - [MYSQL](https://www.mysql.com/)
 
+## ER DB - MYSQL
+![contato](https://user-images.githubusercontent.com/39013655/98778000-0f2d7200-23c8-11eb-836d-4c719804c168.PNG)
+
 ## Configuração do serve e da conexão do MYSQL 
 Narquivo <strong>application.properties</strong> src/main/resources/application.properties.
 ```
@@ -30,4 +33,5 @@ spring.jpa.database-platform=org.hibernate.dialect.MySQL5InnoDBDialect
 ## Front End da Aplicação em vue 
 
 https://github.com/DavidGina306/contact-front
+
 
