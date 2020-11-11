@@ -4,6 +4,7 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
 
 public class ContactFormValidate {
     private Long id;
@@ -15,7 +16,7 @@ public class ContactFormValidate {
     @NotBlank
     private String sexo;
     @NotBlank
-    @Pattern(regexp = "^\\((?:[14689][1-9]|2[12478]|3[1234578]|5[1345]|7[134579])\\) (?:[2-8]|9[1-9])[0-9]{3}\\-[0-9]{4}$")
+    @Size(min = 14, max = 15)
     private String telefone;
 
     public Long getId() {
