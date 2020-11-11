@@ -1,8 +1,16 @@
-# Bem vindo a CONTACT FULL
-
-[![Build Status](https://travis-ci.org/codecentric/springboot-sample-app.svg?branch=master)](https://travis-ci.org/codecentric/springboot-sample-app)
-[![Coverage Status](https://coveralls.io/repos/github/codecentric/springboot-sample-app/badge.svg?branch=master)](https://coveralls.io/github/codecentric/springboot-sample-app?branch=master)
-[![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
+<h1 align="center">Bem vindo a CONTACT FULL 👋</h1>
+<p align="center">
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <img src="https://img.shields.io/badge/JDK-%3E%3D1.8-blue.svg" />
+  <img src="https://img.shields.io/badge/Maven-%3E%3D3.0-blue.svg" />
+  <img src="https://img.shields.io/badge/SPRING-%3E%3D2.3.4-green.svg" />
+  <a href="https://github.com/DavidGina306/contacts#readme" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://github.com/kefranabg/readme-md-generator/graphs/commit-activity" target="_blank">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  </a>
+</p>
 
 ## Requerimentos
 
@@ -18,7 +26,7 @@ Para fazer o building e executar a aplicação é necessário:
 ## Configuração do serve e da conexão do MYSQL 
 Narquivo <strong>application.properties</strong> src/main/resources/application.properties.
 ```
-server.port=9090<
+server.port=9090
 
 spring.jpa.hibernate.ddl-auto=update
 spring.datasource.url=jdbc:mysql://localhost:3306/contacts?createDatabaseIfNotExist=true&serverTimezone=UTC
