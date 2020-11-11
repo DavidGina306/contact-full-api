@@ -24,8 +24,8 @@ Para fazer o building e executar a aplicação é necessário:
 ## ER DB - MYSQL
 ![contato](https://user-images.githubusercontent.com/39013655/98778000-0f2d7200-23c8-11eb-836d-4c719804c168.PNG)
 
-## Configuração do serve e da conexão do MYSQL 
-Narquivo <strong>application.properties</strong> src/main/resources/application.properties.
+## Configuração do server e da conexão do MYSQL 
+No arquivo <strong>application.properties</strong> localizado em  src/main/resources/application.properties
 ```
 server.port=9090
 
@@ -37,6 +37,24 @@ spring.jpa.show-sql=true
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.jpa.database-platform=org.hibernate.dialect.MySQL5InnoDBDialect
 ````
+## Script SQL
+No arquivo <strong>scriptsqldb.sql</strong> localizado em database/scriptsqldb.sql
+```
+CREATE DATABASE contacts;
+
+use contacts; 
+
+CREATE TABLE contatos (
+  id bigint(20) NOT NULL AUTO_INCREMENT,
+  created_date datetime DEFAULT NULL,
+  email varchar(255) NOT NULL,
+  nome varchar(255)  NOT NULL,
+  sexo char(1)  NOT NULL,
+  telefone varchar(255)  NOT NULL,
+  updated_date datetime DEFAULT NULL,
+  PRIMARY KEY (id)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+```
 ## Front End da Aplicação em vue 
 
 https://github.com/DavidGina306/contact-front
