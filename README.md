@@ -14,10 +14,10 @@ For building and running the application you need:
 - [Maven 3](https://maven.apache.org)
 - [MYSQL](https://www.mysql.com/)
 
-## Configuração do serve e da conexão do MYSQL
+## Configuração do serve e da conexão do MYSQL 
+Narquivo <strong>application.properties</strong> src/main/resources/application.properties.
 ```
-<b>No arquivo pplication.properties localizado src/main/resources/application.properties.
-server.port=9090</b>
+server.port=9090<
 
 spring.jpa.hibernate.ddl-auto=update
 spring.datasource.url=jdbc:mysql://localhost:3306/contacts?createDatabaseIfNotExist=true&serverTimezone=UTC
